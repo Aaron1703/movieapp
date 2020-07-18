@@ -5,6 +5,7 @@ api_address="http://api.openweathermap.org/data/2.5/weather?appid=a1aa80db9de014
 ia = imdb.IMDb()
 app=Flask(__name__)
 
+@app.route('/')
 @app.route('/index')
 def index():
     return render_template("index.html")
