@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+   <div class="container">
+      <h1>Check out the weather!</h1>
+       <br/><br/>
+  <form action="{{url_for('weather_info')}}" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter a location</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="city">
+  </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
